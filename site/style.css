@@ -8,7 +8,7 @@
 
 
 
-header {
+.oeuvre header {
   left: 0;
   height: 50em;
   width: 100%;
@@ -20,11 +20,12 @@ header {
   background-repeat: no-repeat;
 }
 
+
 main {
   height: 100em;
 }
 header h1{
-  justify-content: center; /* centre horizontalement */
+  justify-content: center; 
   align-items: center;
   align-self: center; 
 }
@@ -91,7 +92,6 @@ footer {
   font-family: 'Poppins';
   color: white;
 }
-
 
 footer p:first-child {
   font-size: 20px;
