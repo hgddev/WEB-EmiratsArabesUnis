@@ -7,7 +7,6 @@
 }
 
 
-
 .oeuvre header {
   left: 0;
   height: 50em;
@@ -18,11 +17,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-
-.lieu header{
-    background-image: url();
 }
 
 
@@ -78,7 +72,7 @@ body {
   height: 100%;
 }
 
-body {}
+
 
 h1 {
   font-size: 5em;
