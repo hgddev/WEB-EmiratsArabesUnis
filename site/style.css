@@ -7,25 +7,27 @@
 }
 
 
-.oeuvre header {
+header {
   left: 0;
   height: 50em;
   width: 100%;
   font-family: 'Poppins';
   display: flex;
-  background-image: url(assets/Images/Oeuvre/dubai.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+.oeuvre header{
+  background-image: url(assets/Images/Oeuvre/dubai.webp);
 
+}
 
 .oeuvre main {
   height: 100em;
 }
 
 
-header h1{
+.oeuvre header h1{
   justify-content: center; 
   align-items: center;
   align-self: center; 
@@ -40,8 +42,9 @@ header ul {
 }
 
 header ul li {
-  padding: 10px 15px 10px 30px;
+  padding: 20px 25px 20px 40px;
   border: 1px solid black;
+  background-color: white;
   border-radius: 90px;
   align-items: center;
 }
