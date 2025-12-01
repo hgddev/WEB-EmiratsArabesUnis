@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Poppins'; 
+  src: url('assets/Fonts/poppins-black-webfont.woff2') format('woff2'),
+       url('assets/Fonts/poppins-black-webfont.woff') format('woff');
+  font-weight: normal; 
+  font-style: normal;  
+}
+
+
+
+header {
+  left : 0;
+  height: 20em;
+  width: 100%;
+  font-family: 'Poppins';
+  display: flex;
+  background-image: url(assets/images/oeuvre/dubai.webp);
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;             
+  margin-right: 0;
+  height: 30px;
+}
+
+header ul li {
+  padding: 10px 15px 10px 30px;
+  border: 1px solid black;
+  border-radius: 90px;
+  align-items: center;     
+}
+
+
+header ul li:nth-child(1) {
+  list-style-image: url('assets/Icones/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
+}
+
+header ul li:nth-child(2) {
+  list-style-image: url('assets/Icones/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
+}
+
+header ul li:nth-child(3) {
+  list-style-image: url('assets/Icones/shapes_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
+}
+
+header ul li:nth-child(4) {
+  list-style-image: url('assets/Icones/map_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
+}
+
+
+h1{
+  font-size: 15em;
+    color: black;
+    text-align: center;
+    margin-top: 5em;
+}
+
+footer {
+    padding-top: 2em;
+    background-color: #FE6D3C;
+    left: 0;
+    width: 100%;
+    height: 12em;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+}
+
+footer p:first-child {
+  font-size: 20px;
+}
+
+footer p:not(:last-of-type) {
+  margin-bottom: 1em; 
+}
+
+footer p:last-of-type {
+  margin-top: auto; 
+  font-size: 10px;
+}
+
