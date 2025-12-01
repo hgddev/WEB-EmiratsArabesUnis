@@ -36,7 +36,6 @@ header ul {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-right: 0;
   height: 30px;
 }
 
