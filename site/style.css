@@ -3,7 +3,7 @@
   src: url('assets/Fonts/poppins-black-webfont.woff2') format('woff2'),
     url('assets/Fonts/poppins-black-webfont.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
+  font-style: 100;
 }
 
 
@@ -16,7 +16,11 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  justify-content: flex-end;
 }
+
+
 .oeuvre header{
   background-image: url(assets/Images/Oeuvre/dubai.webp);
 
@@ -27,44 +31,72 @@ header {
 }
 
 
-.oeuvre header h1{
-  justify-content: center; 
-  align-items: center;
-  align-self: center; 
+.oeuvre header h1 {
+  position: absolute;
+  top: 30%;        
+  left: 50%;         
+  transform: translate(-50%, -50%); 
+  margin: 0;
+  font-size: 5em;
+  color: black;
+  text-align: center;
 }
-
 
 header ul {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   gap: 10px;
   height: 30px;
+  margin-right: 15px;
 }
 
 header ul li {
-  padding: 20px 25px 20px 40px;
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 90px;
+  display: flex;
   align-items: center;
+  gap: 10px;
+  padding: 25px 25px;
+  border-radius: 90px;
+  background-color: white;
+}
+
+header ul li:nth-child(1)::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url('assets/Icones/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header ul li:nth-child(2)::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url('assets/Icones/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header ul li:nth-child(3)::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url('assets/Icones/shapes_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header ul li:nth-child(4)::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url('assets/Icones/map_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 
-header ul li:nth-child(1) {
-  list-style-image: url('assets/Icones/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
-}
-
-header ul li:nth-child(2) {
-  list-style-image: url('assets/Icones/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
-}
-
-header ul li:nth-child(3) {
-  list-style-image: url('assets/Icones/shapes_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
-}
-
-header ul li:nth-child(4) {
-  list-style-image: url('assets/Icones/map_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
-}
 
 
 html,
