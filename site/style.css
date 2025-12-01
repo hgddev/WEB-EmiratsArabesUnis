@@ -6,10 +6,7 @@
   font-style: normal;
 }
 
-.oeuvre header{
-  background-image: url(assets/Images/Oeuvre/dubai.webp);
 
-}
 header {
   left: 0;
   height: 50em;
@@ -20,7 +17,10 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
+.oeuvre header{
+  background-image: url(assets/Images/Oeuvre/dubai.webp);
 
+}
 
 .oeuvre main {
   height: 100em;
