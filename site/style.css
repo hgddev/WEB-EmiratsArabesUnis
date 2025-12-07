@@ -264,7 +264,6 @@ h2 {
   width: 700px;
   min-width: 660px;
   border-radius: 20px;
-  border-radius: 20px;
   background-color: #D9043D;
   position: relative;
   z-index: 2;
@@ -452,7 +451,7 @@ h2 {
 
 
 .oeuvre main section:nth-of-type(4) img {
-  margin-top: -10em;
+  margin-top: -20em;
   height: 50em;
   width: auto;
   position: absolute;
@@ -462,6 +461,7 @@ h2 {
 .oeuvre main section:nth-of-type(4) {
   display: flex;
   align-items: center;
+  margin-top: 20em;
 }
 
 
@@ -472,6 +472,7 @@ h2 {
   background: transparent;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .oeuvre main section:nth-of-type(4) section section {
@@ -482,23 +483,23 @@ h2 {
 .oeuvre main section:nth-of-type(4) section h2 {
   margin-left: 15em;
   width: 19em;
+  margin-top: 1em;
 }
 
-.oeuvre main section:nth-of-type(4) section section:nth-of-type(1) ul {
+.oeuvre main section:nth-of-type(4) section section ul {
   list-style: none;
   align-items: center;
   display: flex;
-  padding: 25px;
-  margin: 0;
+  margin-top: 0;
   gap: 2em;
   margin-left: 40em;
 }
 
-.oeuvre main section:nth-of-type(4) section section:nth-of-type(1) li {
+.oeuvre main section:nth-of-type(4) section section li {
   text-align: center;
 }
 
-.oeuvre main section:nth-of-type(4) section section:nth-of-type(1) li strong {
+.oeuvre main section:nth-of-type(4) section section li strong {
   display: block;
   font-size: 22px;
   margin-bottom: 8px;
@@ -507,12 +508,12 @@ h2 {
   font-family: 'poppinsBOLD';
 }
 
-.oeuvre main section:nth-of-type(4) section section:nth-of-type(1) li span {
-  display: inline-block;
+.oeuvre main section:nth-of-type(4) section section li span {
+  display: flex;
   background-color: white;
   padding: 12px 25px;
   border-radius: 10px;
-  font-weight: 600;
+  font-family: 'poppinsBOLD';
 }
 
 
@@ -520,41 +521,37 @@ h2 {
 .oeuvre main section:nth-of-type(4) section section section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 1em;
-  margin-left: 0;
-  height: 500px;
+  justify-content: flex-start;
+  margin-left: 1em;
+  margin-top: 3em;
+  height: 25em;
 }
 
-.oeuvre main section:nth-of-type(4) section section section article {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.oeuvre main section:nth-of-type(4) section section section article:nth-of-type(1) {
+  margin-top: 7em;
   margin-left: 50em;
-  margin-top: 6em;
-  height: 250px;
-
+  height: auto;
 }
 
-.oeuvre main section:nth-of-type(4) section section section article img {
+.oeuvre main section:nth-of-type(4) section section section article:nth-of-type(1) img {
   border-radius: 20px;
 }
 
-.oeuvre main section:nth-of-type(4) section section section article img:nth-of-type(1) {
+.oeuvre main section:nth-of-type(4) section section section article:nth-of-type(1) img:nth-of-type(1) {
   margin-top: 0;
   margin-left: 0;
   width: 15em;
   height: auto;
 }
 
-.oeuvre main section:nth-of-type(4) section section section article img:nth-of-type(3) {
+.oeuvre main section:nth-of-type(4) section section section article:nth-of-type(1) img:nth-of-type(3) {
   margin-top: 0;
   margin-left: 11em;
   width: 15em;
   height: auto;
 }
 
-.oeuvre main section:nth-of-type(4) section section section article img:nth-of-type(2) {
+.oeuvre main section:nth-of-type(4) section section section article:nth-of-type(1) img:nth-of-type(2) {
   margin-top: 0;
   margin-left: 22em;
   width: 15em;
@@ -563,7 +560,7 @@ h2 {
 
 
 .oeuvre main section:nth-of-type(4) section section section h5 {
-  margin-top: 2em;
+  margin-top: 0;
   margin-left: 62em;
 }
 
@@ -585,39 +582,36 @@ h2 {
 
 
 
-.oeuvre main section:nth-of-type(5) article {
+.oeuvre main section:nth-of-type(5) article:nth-of-type(2) {
   display: flex;
+  margin-top: 0;
   flex-direction: column;
   align-self: center;
   justify-content: flex-start;
-  height: 26em ;
   width: 10em;
-  background-color: red;
 }
 
  
-.oeuvre main section:nth-of-type(5) article h3,
-.oeuvre main section:nth-of-type(5) article p {
+.oeuvre main section:nth-of-type(5) article:nth-of-type(2) h3,
+.oeuvre main section:nth-of-type(5) article:nth-of-type(2) p {
   text-align: center;
   margin-top: 2em;
 }
 
-.oeuvre main section:nth-of-type(5) article h3{
+.oeuvre main section:nth-of-type(5) article:nth-of-type(2) h3{
   color: #FE6D3C;
   font-size: 20px;
 }
 
-.oeuvre main section:nth-of-type(5) article p{
+.oeuvre main section:nth-of-type(5) article:nth-of-type(2) p{
   color: black;
   font-family: 'poppinsBOLD';
   font-size: 20px;
 }
 
-.oeuvre main section:nth-of-type(5) article img {
+.oeuvre main section:nth-of-type(5) article:nth-of-type(2) img {
   margin-top: 11em;
-  height: 10em;  
-  max-width: 100%;
-  border-radius: 20px;  
+  height: 10em;
 }
 
 .oeuvre main section:nth-of-type(5) figure {
