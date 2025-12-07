@@ -197,14 +197,14 @@ h2 {
 }
 
 /*container des deux articles*/
-.oeuvre main section article:nth-of-type(1) {
+.oeuvre main section:nth-of-type(1) article:nth-of-type(1) {
   display: flex;
   align-items: flex-start;
   gap: 2em;
 }
 
 /*article contexte*/
-.oeuvre main section article:nth-of-type(1) {
+.oeuvre main section:nth-of-type(1) article:nth-of-type(1) {
   width: 660px;
   min-width: 660px;
   height: 395px;
@@ -217,7 +217,7 @@ h2 {
 }
 
 /*container titre et texte contexte*/
-.oeuvre main section article:nth-of-type(1) section {
+.oeuvre main section:nth-of-type(1) article:nth-of-type(1) section {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -244,7 +244,7 @@ h2 {
   align-items: center;
 }
 
-.oeuvre main section article:nth-of-type(1) section h5 img {
+.oeuvre main section:nth-of-type(1) article:nth-of-type(1) section h5 img {
   width: 18px;
   height: 18px;
   position: static;
@@ -253,14 +253,14 @@ h2 {
 
 
 /*texte sur le contexte*/
-.oeuvre main section article:nth-of-type(1) section p {
+.oeuvre main section:nth-of-type(1) article:nth-of-type(1) section p {
   margin-top: 1em;
 
 }
 
 
 /*article architecte*/
-.oeuvre main section article:nth-of-type(2) {
+.oeuvre main section:nth-of-type(1) article:nth-of-type(2) {
   width: 700px;
   min-width: 660px;
   border-radius: 20px;
@@ -274,7 +274,7 @@ h2 {
 
 
 /*image contexte*/
-.oeuvre main section article:nth-of-type(1) img {
+.oeuvre main section:nth-of-type(1) article:nth-of-type(1) img {
   position: absolute;
   left: 0;
   top: 0;
@@ -286,7 +286,7 @@ h2 {
 
 
 /*image architecte*/
-.oeuvre main section article:nth-of-type(2) img {
+.oeuvre main section:nth-of-type(1) article:nth-of-type(2) img {
   position: absolute;
   right: 0;
   top: 0;
@@ -299,7 +299,7 @@ h2 {
 
 
 /*container titre et texte architecte*/
-.oeuvre main section article:nth-of-type(2) section {
+.oeuvre main section:nth-of-type(1) article:nth-of-type(2) section {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -318,11 +318,11 @@ h2 {
 
 
 /*texte sur l'architecte*/
-.oeuvre main section article:nth-of-type(2) section p {
+.oeuvre main section:nth-of-type(1) article:nth-of-type(2) section p {
   margin-top: 2em;
 }
 
-.oeuvre main section article:nth-of-type(2) section h5 img {
+.oeuvre main section:nth-of-type(1) article:nth-of-type(2) section h5 img {
   width: 25px;
   height: 25px;
   position: static;
@@ -432,7 +432,6 @@ h2 {
 .oeuvre main section:nth-of-type(3) figure figcaption {
   font-size: 40px;
   width: 300px;
-
 }
 
 
@@ -515,10 +514,10 @@ h2 {
   border-radius: 10px;
   font-weight: 600;
 }
-    
 
 
-.oeuvre main section:nth-of-type(4) section section section{
+
+.oeuvre main section:nth-of-type(4) section section section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -540,20 +539,22 @@ h2 {
 .oeuvre main section:nth-of-type(4) section section section article img {
   border-radius: 20px;
 }
-.oeuvre main section:nth-of-type(4) section section section article img:nth-of-type(1){
+
+.oeuvre main section:nth-of-type(4) section section section article img:nth-of-type(1) {
   margin-top: 0;
   margin-left: 0;
   width: 15em;
   height: auto;
 }
-.oeuvre main section:nth-of-type(4) section section section article img:nth-of-type(3){
+
+.oeuvre main section:nth-of-type(4) section section section article img:nth-of-type(3) {
   margin-top: 0;
   margin-left: 11em;
   width: 15em;
   height: auto;
 }
 
-.oeuvre main section:nth-of-type(4) section section section article img:nth-of-type(2){
+.oeuvre main section:nth-of-type(4) section section section article img:nth-of-type(2) {
   margin-top: 0;
   margin-left: 22em;
   width: 15em;
@@ -561,12 +562,84 @@ h2 {
 }
 
 
-.oeuvre main section:nth-of-type(4) section section section  h5{
+.oeuvre main section:nth-of-type(4) section section section h5 {
   margin-top: 2em;
   margin-left: 62em;
 }
 
 
+
+
+
+
+.oeuvre main section:nth-of-type(5) {
+  margin-top: 15em;
+  display: flex;
+  flex-direction: row;
+  height: 35em;
+  min-height: 0;
+  min-width: none;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+
+.oeuvre main section:nth-of-type(5) article {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: flex-start;
+  height: 26em ;
+  width: 10em;
+  background-color: red;
+}
+
+ 
+.oeuvre main section:nth-of-type(5) article h3,
+.oeuvre main section:nth-of-type(5) article p {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.oeuvre main section:nth-of-type(5) article h3{
+  color: #FE6D3C;
+  font-size: 20px;
+}
+
+.oeuvre main section:nth-of-type(5) article p{
+  color: black;
+  font-family: 'poppinsBOLD';
+  font-size: 20px;
+}
+
+.oeuvre main section:nth-of-type(5) article img {
+  margin-top: 11em;
+  height: 10em;  
+  max-width: 100%;
+  border-radius: 20px;  
+}
+
+.oeuvre main section:nth-of-type(5) figure {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  align-items: center;
+  height: 25em;
+}
+
+
+.oeuvre main section:nth-of-type(5) figure img {
+  border-radius: 20px;
+  margin-left: 0;
+}
+
+.oeuvre main section:nth-of-type(5) figure figcaption {
+  font-size: 25px;
+  margin-left: 0;
+  width: 300px;
+}
 
 
 
@@ -597,6 +670,6 @@ footer p:not(:last-of-type) {
 
 footer p:last-of-type {
   margin-top: auto;
-  
+
   font-size: 10px;
 }
