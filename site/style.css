@@ -109,6 +109,29 @@ h1 {
   display: flex;
 }
 
+.index header{
+  background-image: url('assets/images/Acceuil/image_acceuil_EAU.jpg');
+  background-size: 1440px 775px;
+}
+
+.index header h1{
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  justify-content: center;
+  align-self: center;
+}
+
+.index main section:first-child section:first-child article h2{
+  width: 800px;
+  height: 73px;
+  background-color: #F29C50;
+  color: white;
+  font-size : 36px;
+}
+
+
+
 
 
 .oeuvre header {
