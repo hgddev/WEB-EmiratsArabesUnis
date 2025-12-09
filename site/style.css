@@ -163,7 +163,7 @@ h1 {
 }
 
 .personnage header {
-  background-image: url(assets/Images/personnage/img_header2.webp);
+  background-image: url(assets/Images/personnage/header.png);
   width: 100%;
   height: 940px;
 }
@@ -703,8 +703,13 @@ h2 {
 
 .personnage section article {
   display: flex;
-  padding: 2em;
-  margin: 2em;
+  padding: 50px;
+  margin: 50px;
+}
+
+.personnage section article section {
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
 .personnage img {
@@ -742,6 +747,13 @@ h2 {
   width: 352px;
   height: 193px;
 }
+
+.personnage section article:nth-child(1) section{
+  display: flex;
+  flex-direction: column ;
+  
+}
+
 
 
 footer {
