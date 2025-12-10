@@ -113,6 +113,8 @@ h1 {
 
 /*Partie Acceuil*/
 
+/*Micro agencements 1ère grande section*/
+
 .index header {
   background-image: url('assets/images/Acceuil/image_acceuil_EAU.jpg');
 }
@@ -132,19 +134,21 @@ h1 {
   background-color: #F29C50;
   color: white;
   font-size: 36px;
+  align-content: center;
+  padding-left: 1em;
 }
 
-.index main section:first-child section:first-child article {
+.index main section:first-child section:first-child article article{
   display: block;
   box-sizing: border-box;
-  width: 801px;
-  height: 472px;
+  width: auto;
+  height: 450px;
   background-color: rgba(150, 172, 217, 0.26);
 }
 
 .index main section:first-child section:first-child article article p{
-  padding: 3em 3em;
-  width: 691px;
+  padding: 2em 2em;
+  width: 700px;
   text-align: justify;
 }
 
@@ -153,15 +157,41 @@ h1 {
   color: white;
   box-sizing: border-box;
   width: 282px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 7em;
+  text-align: center;
+  align-content: center;
 }
 
-/* Arrangement de la première*/
+/* Arrangement de la première grande section*/
 
 .index main section:first-child section:first-child {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
 }
 
+.index main section:first-child section:first-child figure:nth-of-type(1){
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.index main section:first-child section:first-child article{
+  order: 2;
+}
+
+.index main section:first-child section:first-child figure:nth-of-type(2){
+  order: 3;
+}
+
+/* Micro agencement 2e grande section*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 .oeuvre header {
