@@ -123,6 +123,7 @@ h1 {
   font-weight: bold;
   justify-content: center;
   align-self: center;
+  align-items: center;
 }
 
 .index main section:first-child section:first-child article h2 {
@@ -133,7 +134,33 @@ h1 {
   font-size: 36px;
 }
 
+.index main section:first-child section:first-child article {
+  display: block;
+  box-sizing: border-box;
+  width: 801px;
+  height: 472px;
+  background-color: rgba(150, 172, 217, 0.26);
+}
 
+.index main section:first-child section:first-child article article p{
+  padding: 3em 3em;
+  width: 691px;
+  text-align: justify;
+}
+
+.index main section:first-child section:first-child figure:nth-of-type(2) figcaption{
+  background-color: #3966bf;
+  color: white;
+  box-sizing: border-box;
+  width: 282px;
+}
+
+/* Arrangement de la première*/
+
+.index main section:first-child section:first-child {
+  display: flex;
+  flex-direction: row;
+}
 
 
 
