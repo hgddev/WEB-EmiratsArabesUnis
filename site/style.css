@@ -921,13 +921,7 @@ main p:nth-of-type(1) {
   color: rgba(0, 0, 0, 0.60);
 }
 
-.personnage section hr {
-  width: 70%;
-  border: none;
-  height: 2px;
-  background-color: #aaa;
-  text-align: center;
-}
+
 
 footer {
   margin-top: auto;
