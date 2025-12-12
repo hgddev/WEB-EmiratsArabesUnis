@@ -113,6 +113,15 @@ h1 {
 
 /*Partie Acceuil*/
 
+/* Settings de la totalité de la page*/
+.index {
+  min-width: 1280px;
+}
+
+.index main{
+  padding: 0 1em;
+}
+
 /*Micro agencements 1ère grande section*/
 
 .index header {
@@ -128,7 +137,7 @@ h1 {
   align-items: center;
 }
 
-.index main section:first-child section:first-child article h2 {
+.index main section:first-child article h2{
   width: 800px;
   height: 73px;
   background-color: #F29C50;
@@ -138,7 +147,7 @@ h1 {
   padding-left: 1em;
 }
 
-.index main section:first-child section:first-child article article{
+.index main section:first-child article article{
   display: block;
   box-sizing: border-box;
   width: auto;
@@ -146,13 +155,14 @@ h1 {
   background-color: rgba(150, 172, 217, 0.26);
 }
 
-.index main section:first-child section:first-child article article p{
+.index main section:first-child article article p{
   padding: 2em 2em;
   width: 700px;
   text-align: justify;
+  font-size: 24px;
 }
 
-.index main section:first-child section:first-child figure:nth-of-type(2) figcaption{
+.index main section:first-child figure:nth-of-type(2) figcaption{
   background-color: #3966bf;
   color: white;
   box-sizing: border-box;
@@ -166,30 +176,70 @@ h1 {
 
 /* Arrangement de la première grande section*/
 
-.index main section:first-child section:first-child {
+.index main section:first-child {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
 }
 
-.index main section:first-child section:first-child figure:nth-of-type(1){
+.index main section:first-child figure:nth-of-type(1){
   order: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.index main section:first-child section:first-child article{
+.index main section:first-child article{
   order: 2;
 }
 
-.index main section:first-child section:first-child figure:nth-of-type(2){
+.index main section:first-child figure:nth-of-type(2){
   order: 3;
 }
 
 /* Micro agencement 2e grande section*/
 
+.index section:nth-of-type(2) section:first-child article{
+  background-color: #F29C50;
+  box-sizing: border-box;
+  width: 800px;
+  height: 350px;
+  border-top-right-radius: 30px;
+  font-size: 24px;
+}
+
+.index section:nth-of-type(2) section:nth-of-type(2) article{
+  background-color: #D9043D;
+  box-sizing: border-box;
+  width: 800px;
+  height: 350px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-size: 24px;
+}
+
+.index section:nth-of-type(2) section:nth-of-type(3) article{
+  background-color: #f4cdab;
+  box-sizing: border-box;
+  width: 800px;
+  height: 350px;
+  border-bottom-right-radius: 30px;
+  font-size: 24px;
+}
+
+/*Agencement dela deuxième grande section de la page*/
+
+.index section:nth-of-type(2){
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index section:nth-of-type(2) section{
+  display: inline-flex;
+}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////*/
 
