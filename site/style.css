@@ -116,12 +116,17 @@ h1 {
 /* Settings de la totalité de la page*/
 .index {
   box-sizing: border-box;
-  min-width: 1280px;
-  max-width: 1440px;
+  /*min-width: 1280px;
+  max-width: 1440px;*/
   margin-left: 0.5em;
+  color: #252525;
 }
 
 .index main{
+  /*border: 8px solid black;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 1em;
 }
 
@@ -140,7 +145,7 @@ h1 {
   align-items: center;
 }
 
-.index main section:first-child article h2:first-child{
+.index .pres{
   width: 800px;
   height: 73px;
   background-color: #F29C50;
@@ -159,6 +164,7 @@ h1 {
 }
 
 .index main section:first-child article article p{
+  
   padding: 2em 2em;
   width: 700px;
   text-align: justify;
@@ -188,8 +194,9 @@ h1 {
 
 .index main section:first-child figure:nth-of-type(1){
   order: 1;
-  display: block;
+  display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 
 .index main section:first-child article{
@@ -232,28 +239,131 @@ h1 {
 
 /*Agencement dela deuxième grande section de la page*/
 
-.index section:nth-of-type(2){
+.index section:nth-of-type(2):not(section:nth-of-type(2) section){
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
+  align-items: center;
 }
 
 .index section:nth-of-type(2) section:nth-of-type(1){
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
+  align-items: flex-end;
 }
-.index section:nth-of-type(2) section:nth-of-type(1) figure{
-  position: relative;
-  
-}
-
-.index section:nth-of-type(2) section:nth-of-type(2){
+.index main section:nth-of-type(2) section:nth-child(2){
   display: flex;
   flex-direction: row;
 }
 
-.index section:nth-of-type(2) section:nth-of-type(3){
-  display: inline;
+.index main section:nth-of-type(2) section:nth-child(3){
+  /*border: 8px solid black;*/
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.index section:nth-of-type(2) section:nth-of-type(2) figure{
+  order: 2;
+}
+
+
+/*Micro Agencement de l'avant-dernière grande Section*/
+
+/*Setting des formes*/
+
+.index main section:nth-of-type(3) > h2{
+  color: #FE6D3C;
+  font-family: poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/*Démographie et image*/
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(1){
+
+  background-color: #D9043D;
+  border-radius: 40px;
+  box-sizing: border-box;
+  width: 748px;
+  height: 500px;
+  color: #ffd5d5;
+  padding: 3em 3em;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(1) h2{
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(1) p{
+
+  font-size: 24px;
+  text-align: justify;
+  color: #ffd5d5;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) img{
+
+  border-radius: 40px;
+}
+
+/*Langues*/
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(2){
+
+  background-color: #f4cdab;
+  border-radius: 40px;
+  box-sizing: border-box;
+  width: 730px;
+  height: 500px;
+  padding: 3em 3em;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(2) h2{
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(2) p{
+
+  font-size: 24px;
+  text-align: justify;
+}
+
+/*Culture*/
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(3){
+/* border: 8px solid black;*/
+
+  background-color: #F29C50;
+  border-radius: 40px;
+  box-sizing: border-box;
+  width: 945px;
+  height: 550px;
+  padding: 3em 3em;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(3) h2{
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(3) p{
+
+  font-size: 24px;
+  text-align: justify;
+}
+
+.index main aside h2{
+  color: #FE6D3C;
+  font-family: poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////*/
