@@ -1479,14 +1479,14 @@ footer p:nth-of-type(3) {
 .lieu h2 {
     color: #090909;
     width: 550px;
-    font-family: Poppins;
+    font-family: PoppinsN;
     font-size: 40px;
     font-weight: normal;
 }
 
 .lieu p {
     color: rgba(0, 0, 0, 0.55);
-    font-family: Poppins;
+    font-family: PoppinsN;
     font-size: 16px;
     font-weight: lighter;
     line-height: 28px;
@@ -1575,7 +1575,7 @@ footer p:nth-of-type(3) {
 .lieu h1 {
     position: relative;
     color: #FFF;
-    font-family: Poppins;
+    font-family: PoppinsN;
     font-size: 85px;
     font-weight: 100;
     line-height: 85px;
@@ -2330,7 +2330,7 @@ section:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(3) {
 
 .lieu footer p{
     position: relative;
-    font-family: Poppins;
+    font-family: PoppinsN;
     text-align: center;
     display: inline-block;
     color: #fff;
