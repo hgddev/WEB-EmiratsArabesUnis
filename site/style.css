@@ -142,6 +142,7 @@ h1 {
   color: white;
   font-size: 96px;
   font-weight: bold;
+  font-variant: small-caps;
   display: flex;
   position: absolute;
   left: 40%;
