@@ -46,7 +46,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  justify-content: flex-end;
 }
 
 header > nav {
