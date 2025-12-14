@@ -1461,7 +1461,7 @@ footer p:nth-of-type(3){
 
 /*----------------------------------------- PAGE LIEU ----------------------------------------------------*/
 
-.lieu > main, header, footer, section{
+.lieu main, .lieu header, .lieu footer, .lieu section{
     max-width: 1400px;
     margin: 0 auto;
 
@@ -1469,7 +1469,7 @@ footer p:nth-of-type(3){
     padding-right: clamp(24px, 4vw, 110px);
 }
 
-.lieu h1, h2, h3, p {
+.lieu h1, .lieu h2, .lieu h3, .lieu p {
     margin: 0;
 }
 
@@ -1502,6 +1502,8 @@ footer p:nth-of-type(3){
     position: relative;
     height: 850px;
     overflow: hidden;
+    max-width: none;
+    margin: 0;
 }
 
 .lieu header video {
@@ -1534,7 +1536,6 @@ footer p:nth-of-type(3){
     padding-top: 40%;
     padding-left: clamp(24px, 4vw, 110px);
 }
-
 
 /*----------------------------------------- SECTION 1 ----------------------------------------------------*/
 .lieu section:nth-of-type(1), section:nth-of-type(3), section:nth-of-type(5){
@@ -1866,6 +1867,10 @@ section:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(3) {
     max-width: 410px;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.lieu section:nth-of-type(4) section:nth-of-type(2) article:nth-of-type(1){
+    gap: 0px;
 }
 
 .lieu section:nth-of-type(4) section:nth-of-type(2) article:nth-of-type(1) h3:nth-of-type(1){
