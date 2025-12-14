@@ -113,6 +113,20 @@ h1 {
 
 /*Partie Acceuil*/
 
+/* Settings de la totalité de la page*/
+.index {
+  box-sizing: border-box;
+  min-width: 1280px;
+  max-width: 1440px;
+  margin-left: 0.5em;
+}
+
+.index main{
+  padding: 0 1em;
+}
+
+/*Micro agencements 1ère grande section*/
+
 .index header {
   background-image: url('assets/images/Acceuil/image_acceuil_EAU.jpg');
 }
@@ -123,18 +137,126 @@ h1 {
   font-weight: bold;
   justify-content: center;
   align-self: center;
+  align-items: center;
 }
 
-.index main section:first-child section:first-child article h2 {
+.index main section:first-child article h2:first-child{
   width: 800px;
   height: 73px;
   background-color: #F29C50;
   color: white;
   font-size: 36px;
+  align-content: center;
+  padding-left: 1em;
 }
 
+.index main section:first-child article article{
+  display: block;
+  box-sizing: border-box;
+  width: auto;
+  height: 450px;
+  background-color: rgba(150, 172, 217, 0.26);
+}
 
+.index main section:first-child article article p{
+  padding: 2em 2em;
+  width: 700px;
+  text-align: justify;
+  font-size: 24px;
+}
 
+.index main section:first-child figure:nth-of-type(2) figcaption{
+  background-color: #3966bf;
+  color: white;
+  box-sizing: border-box;
+  width: 282px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 7em;
+  text-align: center;
+  align-content: center;
+}
+
+/* Arrangement de la première grande section*/
+
+.index main section:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.index main section:first-child figure:nth-of-type(1){
+  order: 1;
+  display: block;
+  flex-direction: column;
+}
+
+.index main section:first-child article{
+  order: 2;
+}
+
+.index main section:first-child figure:nth-of-type(2){
+  order: 3;
+}
+
+/* Micro agencement 2e grande section*/
+
+.index section:nth-of-type(2) section:first-child article{
+  background-color: #F29C50;
+  box-sizing: border-box;
+  width: 800px;
+  height: 350px;
+  border-top-right-radius: 30px;
+  font-size: 24px;
+}
+
+.index section:nth-of-type(2) section:nth-of-type(2) article{
+  background-color: #D9043D;
+  box-sizing: border-box;
+  width: 800px;
+  height: 350px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-size: 24px;
+}
+
+.index section:nth-of-type(2) section:nth-of-type(3) article{
+  background-color: #f4cdab;
+  box-sizing: border-box;
+  width: 800px;
+  height: 350px;
+  border-bottom-right-radius: 30px;
+  font-size: 24px;
+}
+
+/*Agencement dela deuxième grande section de la page*/
+
+.index section:nth-of-type(2){
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.index section:nth-of-type(2) section:nth-of-type(1){
+  display: inline-flex;
+  flex-direction: row;
+}
+.index section:nth-of-type(2) section:nth-of-type(1) figure{
+  position: relative;
+  
+}
+
+.index section:nth-of-type(2) section:nth-of-type(2){
+  display: flex;
+  flex-direction: row;
+}
+
+.index section:nth-of-type(2) section:nth-of-type(3){
+  display: inline;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 .oeuvre header {
@@ -214,7 +336,7 @@ main p:nth-of-type(1) {
 }
 
 
-h2 {
+.oeuvre h2 {
   color: #000000;
   text-shadow: 4px 4px 5px black;
 }
@@ -897,6 +1019,7 @@ h2 {
 .personnage section article:nth-child(4) {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .personnage section article p {
@@ -918,7 +1041,7 @@ h2 {
   height: 350px;
 }
 
-.personnage section article:nth-child(5) img {
+.personnage section article:last-child img {
   width: 352px;
   height: 193px;
 }
@@ -926,6 +1049,15 @@ h2 {
 .personnage section article:nth-child(1) section{
   display: flex;
   flex-direction: column ;
+}
+
+.personnage section article:nth-child(3) section{
+  order: 1;
+}
+
+
+.personnage section article ul li {
+  color: rgba(0, 0, 0, 0.60);
 }
 
 
