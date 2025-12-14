@@ -115,7 +115,10 @@ h1 {
 
 /* Settings de la totalité de la page*/
 .index {
+  box-sizing: border-box;
   min-width: 1280px;
+  max-width: 1440px;
+  margin-left: 0.5em;
 }
 
 .index main{
@@ -137,7 +140,7 @@ h1 {
   align-items: center;
 }
 
-.index main section:first-child article h2{
+.index main section:first-child article h2:first-child{
   width: 800px;
   height: 73px;
   background-color: #F29C50;
@@ -185,9 +188,8 @@ h1 {
 
 .index main section:first-child figure:nth-of-type(1){
   order: 1;
-  display: flex;
+  display: block;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .index main section:first-child article{
@@ -232,13 +234,26 @@ h1 {
 
 .index section:nth-of-type(2){
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
-  align-items: center;
 }
 
-.index section:nth-of-type(2) section{
+.index section:nth-of-type(2) section:nth-of-type(1){
   display: inline-flex;
+  flex-direction: row;
+}
+.index section:nth-of-type(2) section:nth-of-type(1) figure{
+  position: relative;
+  
+}
+
+.index section:nth-of-type(2) section:nth-of-type(2){
+  display: flex;
+  flex-direction: row;
+}
+
+.index section:nth-of-type(2) section:nth-of-type(3){
+  display: inline;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////*/
