@@ -137,12 +137,15 @@ h1 {
 }
 
 .index header h1 {
+  /*border: 8px solid black;*/
   color: white;
   font-size: 96px;
   font-weight: bold;
-  justify-content: center;
+  display: flex;
+  position: absolute;
+  left: 40%;
   align-self: center;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .index .pres{
@@ -183,7 +186,7 @@ h1 {
   align-content: center;
 }
 
-/* Arrangement de la première grande section*/
+/*  Arrangement de la première grande section  */
 
 .index main section:first-child {
   display: flex;
@@ -209,32 +212,70 @@ h1 {
 
 /* Micro agencement 2e grande section*/
 
+/*La grande 2e Section*/
+.index section:nth-of-type(2):not(section:nth-of-type(2) section:nth-of-type(2)){
+
+  margin-top: 1em;
+  padding-top: 5em;
+}
+
+
 .index section:nth-of-type(2) section:first-child article{
   background-color: #F29C50;
   box-sizing: border-box;
   width: 800px;
-  height: 350px;
+  height: 480px;
   border-top-right-radius: 30px;
   font-size: 24px;
 }
 
 .index section:nth-of-type(2) section:nth-of-type(2) article{
   background-color: #D9043D;
+  color: #ffd5d5;
   box-sizing: border-box;
   width: 800px;
-  height: 350px;
+  height: 430px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   font-size: 24px;
+  padding-top: 5em;
+  padding-right: 5em;
+  position: relative;
+  left: 70px;
+}
+
+.index section:nth-of-type(2) section:nth-of-type(2) article p{
+  color: #ffd5d5;
 }
 
 .index section:nth-of-type(2) section:nth-of-type(3) article{
   background-color: #f4cdab;
   box-sizing: border-box;
   width: 800px;
-  height: 350px;
+  height: 470px;
   border-bottom-right-radius: 30px;
   font-size: 24px;
+  padding-top: 4em;
+}
+
+/*  Mise en forme du texte de la 2e grande section*/
+
+.index main section:nth-of-type(2) section h2{
+  color: #252525;
+  font-size: 48px;
+}
+
+.index main section:nth-of-type(2) section article{
+  padding: 1em 2em;
+}
+
+.index main section:nth-of-type(2) section article p{
+  /*border: 8px solid black;*/
+  color: #252525;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
 }
 
 /*Agencement dela deuxième grande section de la page*/
@@ -249,20 +290,53 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  position: relative;
+  bottom: -128px;
+  z-index: 2;
+  
 }
-.index main section:nth-of-type(2) section:nth-child(2){
+.index main section:nth-of-type(2) section:nth-of-type(2){
+
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
+  position: relative;
+  right: 30px;
+
 }
 
-.index main section:nth-of-type(2) section:nth-child(3){
-  /*border: 8px solid black;*/
+.index main section:nth-of-type(2) section:nth-of-type(3){
   display: flex;
   flex-direction: row-reverse;
+  align-items: flex-start;
 }
 
 .index section:nth-of-type(2) section:nth-of-type(2) figure{
+  /*border: 8px solid black;*/
   order: 2;
+  position: relative;
+  bottom: -19.5px;
+  right: 50px;
+  z-index: 3;
+}
+
+.index section:nth-of-type(2) section:nth-of-type(1) figure{
+  /*border: 8px solid black;*/
+  position: relative;
+  bottom: -16px;
+  left: 40px;
+}
+
+.index section:nth-of-type(2) section:nth-of-type(3) figure{
+  position: relative;
+  bottom: 16px;
+  left: 40px;
+}
+
+
+.index section:nth-of-type(2) section:nth-of-type(3){
+  position: relative;
+  right: 28px;
 }
 
 
@@ -276,9 +350,19 @@ h1 {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
+  align-self: center;
+  margin: 3em 0;
 }
 
 /*Démographie et image*/
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)){ /*La section même*/
+
+  display: flex;
+  flex-direction: column;
+  min-width: 1280px;
+  max-width: 1440px;
+}
 
 .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(1){
 
@@ -305,13 +389,14 @@ h1 {
 }
 
 .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) img{
-
+  justify-content: flex-end;
   border-radius: 40px;
 }
 
 /*Langues*/
 
 .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(2){
+  /*border: 8px solid black;*/
 
   background-color: #f4cdab;
   border-radius: 40px;
@@ -360,10 +445,52 @@ h1 {
 
 .index main aside h2{
   color: #FE6D3C;
-  font-family: poppins;
+  font-family: 'poppins';
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
+}
+
+/*Macro Agencement de la page d'acceuil*/
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(2), .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(1){
+  position: relative;
+  left: -5em;
+  justify-content: flex-start;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) figure:nth-of-type(1){
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  bottom: 10em;
+  z-index: -2;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) figure:nth-of-type(2){
+  position: relative;
+  bottom: 20em;
+  left: 17em;
+  z-index: -2;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(1){
+  position: relative;
+  left: 5em;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(2){
+
+  position: relative;
+  bottom: 15em;
+}
+
+.index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(3){
+/*border: 8px solid black;*/
+  align-self: flex-end;
+  position: relative;
+  bottom: 25em;
+  right: 16em;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////*/
