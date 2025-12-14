@@ -216,7 +216,6 @@ h1 {
 
 /*La grande 2e Section*/
 .index section:nth-of-type(2):not(section:nth-of-type(2) section:nth-of-type(2)){
-
   margin-top: 1em;
   padding-top: 5em;
 }
@@ -230,6 +229,7 @@ h1 {
   border-top-right-radius: 30px;
   font-size: 24px;
 }
+
 
 .index section:nth-of-type(2) section:nth-of-type(2) article{
   background-color: #D9043D;
@@ -709,6 +709,7 @@ main p:nth-of-type(1) {
   align-items: center;
   padding: 0;
   height: 400px;
+  max-height: 400px;
   gap: 15px;
   width: 20em;
   min-width: 0;
@@ -783,6 +784,11 @@ main p:nth-of-type(1) {
 .oeuvre main > section:nth-of-type(2) > figure > img {
   border-radius: 20px;
   width: 350px;
+  transition: transform 0.3s ease; 
+}
+
+.oeuvre main > section:nth-of-type(2) > figure > img:hover {
+  transform: scale(1.1);
 }
 
 
@@ -966,6 +972,7 @@ main p:nth-of-type(1) {
   width: 15em;
   flex-shrink: 0;
   height: auto;
+  transition: transform 0.3s ease;
 }
 
 .oeuvre main>section:nth-of-type(4) section:nth-of-type(1) article:nth-of-type(1)>img:nth-of-type(2) {
@@ -976,14 +983,20 @@ main p:nth-of-type(1) {
   height: auto;
 }
 
+
 .oeuvre main>section:nth-of-type(4) section:nth-of-type(1) article:nth-of-type(1)>img:nth-of-type(3) {
   margin-top: 0;
   width: 15em;
   height: auto;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
 }
 
 
-
+.oeuvre main>section:nth-of-type(4) section:nth-of-type(1) article:nth-of-type(1)>img:nth-of-type(1):hover,
+.oeuvre main>section:nth-of-type(4) section:nth-of-type(1) article:nth-of-type(1)>img:nth-of-type(3):hover {
+  transform: scale(1.1);
+}
 
 
 /*---------------------------conflits juridiques--------------------------------------------*/
