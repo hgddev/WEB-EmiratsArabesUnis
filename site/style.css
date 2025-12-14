@@ -772,8 +772,9 @@ footer p:nth-of-type(3){
 .oeuvre main>section:nth-of-type(1)>article:nth-of-type(1),
 .oeuvre main>section:nth-of-type(1)>article:nth-of-type(2) {
   width: 600px;
-  height: auto;
   height: 400px;
+  max-width: 600px;
+  max-height: 400px;
   border-radius: 25px;
   position: relative;
   display: flex;
@@ -866,6 +867,7 @@ footer p:nth-of-type(3){
   max-height: 400px;
   gap: 15px;
   width: 20em;
+  max-width: 20em;
   min-width: 0;
   flex-shrink: 0;
 }
