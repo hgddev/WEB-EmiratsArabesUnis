@@ -34,67 +34,68 @@ header {
   justify-content: flex-end;
 }
 
-header ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 10px;
-  height: 30px;
-  margin-right: 15px;
+header > nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 1.2rem 2rem;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0)
+    );
 }
 
-header ul li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 25px 25px;
-  border-radius: 90px;
-  background-color: white;
+.oeuvre header > nav {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0)
+    );
+}
+header > nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-header ul li:hover {
-  background-color: #FE6D3C;
+header > nav ul li a {
+    text-decoration: none;
+    font-family: system-ui, sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
 }
 
-header ul li:hover * {
-  color: white;
+header > nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
 }
 
-header ul li:nth-child(1)::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-image: url('assets/Icones/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
+header > nav ul li a:hover {
+    color: #FE6D3C;
 }
 
-header ul li:nth-child(2)::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-image: url('assets/Icones/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
+header > nav ul li a:hover::after {
+    width: 100%;
 }
 
-header ul li:nth-child(3)::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-image: url('assets/Icones/shapes_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-header ul li:nth-child(4)::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-image: url('assets/Icones/map_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
 
 
@@ -263,9 +264,6 @@ h1 {
   background-image: url(assets/Images/Oeuvre/dubai.webp);
 }
 
-.oeuvre main {
-  height: 500em;
-}
 
 .oeuvre header h1 {
   position: absolute;
@@ -338,7 +336,7 @@ main p:nth-of-type(1) {
 
 .oeuvre h2 {
   color: #000000;
-  text-shadow: 4px 4px 5px black;
+  text-shadow: 2px 2px 8px black;
 }
 
 
@@ -876,6 +874,10 @@ main p:nth-of-type(1) {
 
 .oeuvre main>section:nth-of-type(7)>img {
   border-radius: 20px;
+  transition: transform 0.3s ease; 
+}
+.oeuvre main>section:nth-of-type(7)>img:hover {
+  transform: scale(1.1); 
 }
 
 
@@ -900,6 +902,15 @@ main p:nth-of-type(1) {
   justify-content: center; 
   align-items: center;
   flex-direction: column;
+  padding-bottom: 10em;
+}
+
+.oeuvre main .galerie img{
+  transition: transform 0.3s ease; 
+}
+
+.oeuvre main .galerie img:hover{
+  transform: scale(1.1); 
 }
 
 .oeuvre main .galerie > section {
@@ -970,9 +981,90 @@ main p:nth-of-type(1) {
 }
 
 
+/*----------------------------------------------Menu déroulant parcour de la page o--------------------------------------------*/
+.oeuvre .menu-lateral {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* petit bouton visible */
+.oeuvre .menu-ouverture {
+  width: 40px;
+  height: 110px; 
+  background: #000;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 0  10px 10px 0;
+  margin-top: 2em;
+}
+
+/* menu déroulant */
+.oeuvre .menu-contenu {
+  width: 200px;
+  background-color: black;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  padding: 20px;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* texte MENU vertical dans le menu */
+.oeuvre .menu-ouverture .menu-text {
+  writing-mode: vertical-rl; /* vertical */
+  transform: rotate(180deg);  /* lisible de haut en bas */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+/* menu s’ouvre au hover */
+.oeuvre .menu-lateral:hover .menu-contenu {
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.oeuvre .menu-contenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.oeuvre .menu-contenu li {
+  margin: 15px 0;
+}
+
+.oeuvre .menu-contenu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.oeuvre .menu-contenu a:hover {
+  color: #FE6D3C;
+}
 
 
-/*PARTIE GALERIE PHOTO*/
+
 
 
 /*-----------------------------------------PERSONNAGE----------------------------------------------------*/

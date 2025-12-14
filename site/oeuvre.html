@@ -11,23 +11,44 @@
 
 <body class="oeuvre">
 
-    <header>
+    <header id="TDB">
         <h1>The Dubai Frame</h1>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="personnage.html">Personnage</a></li>
-            <li><a href="oeuvre.html">Oeuvre</a></li>
-            <li><a href="lieu.html">Lieu</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="personnage.html">Personnage</a></li>
+                <li><a href="oeuvre.html">Oeuvre</a></li>
+                <li><a href="lieu.html">Lieu</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+
+        <aside class="menu-lateral">
+            <button class="menu-ouverture">
+                <span class="menu-icone">≡</span>
+                <span class="menu-text">MENU</span>
+            </button>
+
+            <nav class="menu-contenu">
+                <ul>
+                    <li><a href="#TDB">The dubain frame</a></li>
+                    <li><a href="#contarchi">Contexte/Architecture</a></li>
+                    <li><a href="#construction">Construction</a></li>
+                    <li><a href="#conception">Conception</a></li>
+                    <li><a href="#galerie">Galerie photo</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+
         <h3>The dubai frame</h3>
         <h2>Un monument iconique au cœur de Dubaï</h2>
         <p>Découvrez en un coup d’œil le monument qui fait briller le skyline de Dubaï.</p>
 
         <section>
-            <article>
+            <article id="contarchi">
                 <section>
                     <h5><img src="assets/Icones/icone_contexte.png" alt="icone contexte">Contexte</h5>
                     <p>Le Dubai Frame, conçu entre 2013 et 2018 et inauguré le 1er janvier 2018, est l’un des monuments
@@ -52,7 +73,7 @@
         </section>
 
 
-        <h2>Construction</h2>
+        <h2 id="construction">Construction</h2>
 
         <section>
             <figure>
@@ -137,7 +158,7 @@
 
 
         <section>
-            <img src="assets/images/Oeuvre/Cadre de Dubai illuminé la nuit-Photoroom.png"
+            <img id="conception" src="assets/images/Oeuvre/Cadre de Dubai illuminé la nuit-Photoroom.png"
                 alt="dubai frame la nuit transparent">
 
             <section>
@@ -228,7 +249,7 @@
         </section>
 
 
-        <section class="galerie">
+        <section class="galerie" id="galerie">
             <h2>Galerie photo</h2>
             <section>
                 <section>
@@ -248,8 +269,6 @@
             </section>
         </section>
     </main>
-
-
 
     <footer>
         <p>Convainvu?</p>
