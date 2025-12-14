@@ -1589,8 +1589,6 @@ footer p:nth-of-type(3){
     position: relative;
     height: 850px;
     overflow: hidden;
-    max-width: none;
-    margin: 0;
 }
 
 .lieu header video {
@@ -1622,6 +1620,7 @@ footer p:nth-of-type(3){
     width: 842px;
     padding-top: 40%;
     padding-left: clamp(24px, 4vw, 110px);
+    text-align: left;
 }
 
 /*----------------------------------------- SECTION 1 ----------------------------------------------------*/
