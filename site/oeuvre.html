@@ -17,6 +17,7 @@
 
         <!-- NAV DESKTOP -->
         <nav class="nav-desktop">
+            <div class="mobile-menu-toggle">☰</div>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="personnage.html">Personnage</a></li>
@@ -287,3 +288,17 @@
 </body>
 
 </html>
+
+<script>
+    const navBar = document.querySelector('header > nav');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    menuToggle.addEventListener('click', function() {
+        navBar.classList.toggle('open');
+    });
+    const navLinks = document.querySelectorAll('header > nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navBar.classList.remove('open');
+        });
+    });
+</script>
