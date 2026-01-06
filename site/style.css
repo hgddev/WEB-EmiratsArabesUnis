@@ -2711,7 +2711,6 @@ nav ul.menu {
 }
 
 
-
 .mobile-menu-toggle {
   display: none;
 }
@@ -2724,11 +2723,7 @@ nav ul.menu {
 
 
 
-
-
-
-
-/* Mobile standard */
+/* ---------------------------------------------------Mobile standard--------------------------------------------------- */
 @media (min-width: 412px) and (max-width: 768px) {
   .oeuvre .menu-lateral {
     display: none;
