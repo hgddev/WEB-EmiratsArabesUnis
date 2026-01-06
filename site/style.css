@@ -2476,6 +2476,7 @@ section:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(3) {
   font-family: Montserrat;
 }
 
+
 .lieu section:nth-of-type(1) article:nth-of-type(3) figure:nth-of-type(2) button img:nth-of-type(1) {
   width: 55px;
   height: 55px;
@@ -2709,17 +2710,11 @@ nav ul.menu {
   display: none;
 }
 
-/* bouton invisible sur desktop */
-.menu-button {
+
+
+.mobile-menu-toggle {
   display: none;
 }
-
-/* cacher checkbox */
-#menu-toggle {
-  display: none;
-}
-
-
 
 
 
@@ -3142,474 +3137,477 @@ nav ul.menu {
 
 
   footer {
-  position: relative;
-  background-color: #fe6d3c;
-  overflow: hidden;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  height: 500px;
-}
+    position: relative;
+    background-color: #fe6d3c;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    height: 500px;
+  }
 
-    .oeuvre main>section:nth-of-type(2)>figure>img:hover {
-      transform: none;
-    }
-
-
-    footer p {
-      position: relative;
-      font-family: PoppinsN;
-      text-align: center;
-      /*display: inline-block;*/
-      color: white;
-    }
-
-    footer p:nth-of-type(1) {
-      padding-top: 0;
-      width: auto;
-      height: 20px;
-      font-size: 25px;
-      letter-spacing: 0.5em;
-      line-height: 0;
-      color: white;
-      margin-top: 2em;
-    }
-
-    footer p:nth-of-type(2) {
-      padding-top: 0;
-      width: 23em;
-      height: auto;
-      font-size: 15px;
-      color: white;
-      margin-top: 3em;
-    }
-
-    footer p:nth-of-type(3) {
-      padding-top: 50px;
-      text-decoration-line: underline;
-      width: 25em;
-      height: 20px;
-      font-size: 10px;
-      color: white;
-
-      order: 3;
-    }
+  .oeuvre main>section:nth-of-type(2)>figure>img:hover {
+    transform: none;
+  }
 
 
+  footer p {
+    position: relative;
+    font-family: PoppinsN;
+    text-align: center;
+    /*display: inline-block;*/
+    color: white;
+  }
+
+  footer p:nth-of-type(1) {
+    padding-top: 0;
+    width: auto;
+    height: 20px;
+    font-size: 25px;
+    letter-spacing: 0.5em;
+    line-height: 0;
+    color: white;
+    margin-top: 2em;
+  }
+
+  footer p:nth-of-type(2) {
+    padding-top: 0;
+    width: 23em;
+    height: auto;
+    font-size: 15px;
+    color: white;
+    margin-top: 3em;
+  }
+
+  footer p:nth-of-type(3) {
+    padding-top: 50px;
+    text-decoration-line: underline;
+    width: 25em;
+    height: 20px;
+    font-size: 10px;
+    color: white;
+
+    order: 3;
+  }
 
 
-    /*----------------------------------------- GENERAL LIEU ----------------------------------------------------*/
 
 
-    .lieu main,
-    .lieu header,
-    .lieu footer,
-    .lieu section {
-        padding-left: 24px;
-        padding-right: 24px;
-        box-sizing: border-box;
-    }
+  /*----------------------------------------- GENERAL LIEU ----------------------------------------------------*/
 
-    .lieu section:nth-of-type(n) article {
-        width: 100%;
-        max-width: 100%;
-    }
 
-    .lieu h2 {
-        font-size: 28px;
-        width: 100%;
-    }
+  .lieu main,
+  .lieu header,
+  .lieu footer,
+  .lieu section {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
 
-    .lieu h3 {
-        font-size: 14px;
-    }
+  .lieu section:nth-of-type(n) article {
+    width: 100%;
+    max-width: 100%;
+  }
 
-    .lieu p {
-        font-size: 14px;
-    }
+  .lieu h2 {
+    font-size: 28px;
+    width: 100%;
+  }
 
-    /*----------------------------------------- HEADER ----------------------------------------------------*/
-    .lieu header {
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+  .lieu h3 {
+    font-size: 14px;
+  }
 
-    .lieu header h1 {
-        font-size: 48px;
-        line-height: 52px;
-        width: 100%;
-        padding-top: 0;
-        padding-left: 0;
-        text-align: center;
-        position: relative;
-        z-index: 10;
-    }
+  .lieu p {
+    font-size: 14px;
+  }
 
-    .lieu header::before {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.75) 99%);
-    }
+  /*----------------------------------------- HEADER ----------------------------------------------------*/
+  .lieu header {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .lieu header nav{
-        background: linear-gradient(to bottom,
+  .lieu header h1 {
+    font-size: 48px;
+    line-height: 52px;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .lieu header::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.75) 99%);
+  }
+
+  .lieu header nav {
+    background: linear-gradient(to bottom,
         rgba(0, 0, 0, 0.55),
         rgba(0, 0, 0, 0));
-    }
+  }
 
 
-    /*----------------------------------------- SECTION 1 & 3 ----------------------------------------------------*/
+  /*----------------------------------------- SECTION 1 & 3 ----------------------------------------------------*/
 
 
-    .lieu section:nth-of-type(1) figure button,
-    .lieu section:nth-of-type(3) figure button {
-        display: none !important;
-    }
+  .lieu section:nth-of-type(1) figure button,
+  .lieu section:nth-of-type(3) figure button {
+    display: none !important;
+  }
 
 
-    .lieu section:nth-of-type(1) figure button,
-    .lieu section:nth-of-type(3) figure button {
-        width: auto;
-        top: auto;
-        left: auto;
-        transform: none;
-        max-width: none;
-    }
-    .lieu section:nth-of-type(1) figure button span:nth-of-type(2),
-    .lieu section:nth-of-type(3) figure button span:nth-of-type(2) {
-        display: none;
-    }
+  .lieu section:nth-of-type(1) figure button,
+  .lieu section:nth-of-type(3) figure button {
+    width: auto;
+    top: auto;
+    left: auto;
+    transform: none;
+    max-width: none;
+  }
 
-    .lieu figure {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .lieu figure img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .lieu section:nth-of-type(1) figure button span:nth-of-type(2),
+  .lieu section:nth-of-type(3) figure button span:nth-of-type(2) {
+    display: none;
+  }
 
+  .lieu figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    /*----------------------------------------- SECTION 1 (PALM JUMEIRAH) ----------------------------------------------------*/
-    .lieu section:nth-of-type(1),
-    section:nth-of-type(3) {
-        padding: 60px 24px 60px;
-    }
-    section:nth-of-type(5) {
-        display: none !important;
-    }
-
-    .lieu section:nth-of-type(1) article:nth-of-type(1) {
-        width: 100%;
-        gap: 8px;
-    }
-
-    .lieu section:nth-of-type(1) article:nth-of-type(3) figure:nth-of-type(2) {
-        display: none;
-    }
-
-    .lieu section:nth-of-type(1) article:nth-of-type(n+2) {
-        width: 100%;
-        flex-direction: column;
-        gap: 16px;
-        margin: 0 auto 16px auto;
-    }
-
-    .lieu section:nth-of-type(1) article:nth-of-type(2) {
-        margin-top: 30px;
-    }
-
-    .lieu section:nth-of-type(1) figure,
-    .lieu section:nth-of-type(1) figure img {
-        width: 100%;
-        height: 250px;
-    }
-
-    .lieu section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(1),
-    .lieu section:nth-of-type(1) article:nth-of-type(3) figure:nth-of-type(2),
-    .lieu section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(2),
-    .lieu section:nth-of-type(1) article:nth-of-type(3) figure:nth-of-type(1) {
-        width: 100%;
-        height: 250px;
-    }
+  .lieu figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 
-    /*----------------------------------------- SECTION 2 (PRESENTATION) ----------------------------------------------------*/
-    .lieu section:nth-of-type(2) {
-        flex-direction: column;
-        gap: 30px;
-        padding: 60px 24px;
-    }
+  /*----------------------------------------- SECTION 1 (PALM JUMEIRAH) ----------------------------------------------------*/
+  .lieu section:nth-of-type(1),
+  section:nth-of-type(3) {
+    padding: 60px 24px 60px;
+  }
 
-    .lieu section:nth-of-type(2)>article:nth-of-type(1) {
-        max-width: 100%;
-        gap: 8px;
-        order: 1;
-    }
+  section:nth-of-type(5) {
+    display: none !important;
+  }
 
-    .lieu section:nth-of-type(2) article:nth-of-type(1) p:nth-of-type(2),
-    .lieu section:nth-of-type(2) article:nth-of-type(1) p:nth-of-type(3) {
-        display: none;
-    }
+  .lieu section:nth-of-type(1) article:nth-of-type(1) {
+    width: 100%;
+    gap: 8px;
+  }
 
-    .lieu section:nth-of-type(2) article:nth-of-type(2) figure:nth-of-type(2) {
-        display: none;
-    }
+  .lieu section:nth-of-type(1) article:nth-of-type(3) figure:nth-of-type(2) {
+    display: none;
+  }
 
-    .lieu section:nth-of-type(2) article:nth-of-type(2) {
-        flex: none;
-        order: 2;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        position: static;
-    }
+  .lieu section:nth-of-type(1) article:nth-of-type(n+2) {
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 auto 16px auto;
+  }
 
-    .lieu section:nth-of-type(2) article:nth-of-type(2) figure:nth-of-type(1),
-    .lieu section:nth-of-type(2) article:nth-of-type(2) figure:nth-of-type(1) img {
-        position: static;
-        width: 100%;
-        height: 200px;
-    }
+  .lieu section:nth-of-type(1) article:nth-of-type(2) {
+    margin-top: 30px;
+  }
 
+  .lieu section:nth-of-type(1) figure,
+  .lieu section:nth-of-type(1) figure img {
+    width: 100%;
+    height: 250px;
+  }
 
-    /*----------------------------------------- SECTION 3 (HISTOIRE) ----------------------------------------------------*/
-    .lieu main>section:nth-of-type(3) {
-        flex-direction: column;
-        gap: 30px;
-        padding: 60px 24px;
-    }
-
-    .lieu main>section:nth-of-type(3) article:nth-of-type(1) {
-        order: 1;
-        max-width: 100%;
-        gap: 8px;
-    }
-
-    .lieu section:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(2),
-    .lieu section:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(3) {
-        display: none;
-    }
-
-    .lieu section:nth-of-type(3) article:nth-of-type(2) {
-        order: 2;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        position: static;
-    }
-
-    .lieu section:nth-of-type(3) article:nth-of-type(2) figure:nth-of-type(2) {
-        display: none;
-    }
-
-    .lieu section:nth-of-type(3) article:nth-of-type(2) figure:nth-of-type(1),
-    .lieu section:nth-of-type(3) article:nth-of-type(2) figure:nth-of-type(1) img {
-        position: static;
-        width: 100%;
-        height: 200px;
-    }
-
-    .lieu section:nth-of-type(3) article:nth-of-type(3) {
-        flex-direction: column;
-        width: 100%;
-        gap: 16px;
-        margin-top: 30px;
-        order: 3;
-    }
-
-    .lieu section:nth-of-type(3) article:nth-of-type(3) figure:nth-of-type(2) {
-        display: none;
-    }
-
-    .lieu section:nth-of-type(3) article:nth-of-type(3) figure:nth-of-type(1),
-    .lieu section:nth-of-type(3) article:nth-of-type(3) figure:nth-of-type(1) img {
-        width: 100%;
-        height: 250px;
-    }
+  .lieu section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(1),
+  .lieu section:nth-of-type(1) article:nth-of-type(3) figure:nth-of-type(2),
+  .lieu section:nth-of-type(1) article:nth-of-type(2) figure:nth-of-type(2),
+  .lieu section:nth-of-type(1) article:nth-of-type(3) figure:nth-of-type(1) {
+    width: 100%;
+    height: 250px;
+  }
 
 
-    /*----------------------------------------- SECTION 4 (ATTRACTION) ----------------------------------------------------*/
-    .lieu section:nth-of-type(4) section:nth-of-type(1) {
-        padding-bottom: 30px;
-    }
+  /*----------------------------------------- SECTION 2 (PRESENTATION) ----------------------------------------------------*/
+  .lieu section:nth-of-type(2) {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 24px;
+  }
 
-    .lieu section:nth-of-type(4) h2,
-    .lieu section:nth-of-type(4) h3,
-    .lieu section:nth-of-type(4) p {
-        text-align: center;
-        width: 100%;
-    }
+  .lieu section:nth-of-type(2)>article:nth-of-type(1) {
+    max-width: 100%;
+    gap: 8px;
+    order: 1;
+  }
 
-    .lieu section:nth-of-type(4) hr {
-        margin: 30px 0;
-    }
+  .lieu section:nth-of-type(2) article:nth-of-type(1) p:nth-of-type(2),
+  .lieu section:nth-of-type(2) article:nth-of-type(1) p:nth-of-type(3) {
+    display: none;
+  }
 
-    .lieu section:nth-of-type(4) section:nth-of-type(2),
-    .lieu section:nth-of-type(4) section:nth-of-type(3),
-    .lieu section:nth-of-type(4) section:nth-of-type(4) {
-        flex-direction: column;
-        gap: 20px;
-        max-width: 100%;
-        max-height: none;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+  .lieu section:nth-of-type(2) article:nth-of-type(2) figure:nth-of-type(2) {
+    display: none;
+  }
 
-    .lieu section:nth-of-type(4) section:nth-of-type(n+2) article {
-        width: 100%;
-        max-width: 100%;
-    }
+  .lieu section:nth-of-type(2) article:nth-of-type(2) {
+    flex: none;
+    order: 2;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: static;
+  }
 
-    .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(1) p:nth-of-type(1),
-    .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(1) p:nth-of-type(2) {
-        display: none;
-    }
-
-    .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(1) {
-        order: 1;
-        gap: 5px;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(1) h3 {
-        font-size: 20px;
-        text-align: left;
-    }
-
-    .lieu section:nth-of-type(4) section:nth-of-type(n+2) figure {
-        order: 2;
-        position: static;
-        margin: 0 auto;
-    }
-
-    .lieu section:nth-of-type(4) section:nth-of-type(n+2) figure img {
-        width: 100%;
-        max-width: 400px;
-        height: 200px;
-        border-radius: 16px;
-    }
-
-    .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(2) {
-        order: 3;
-        padding-top: 0;
-        align-items: flex-start;
-        gap: 16px;
-    }
-
-    .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(2) p {
-        width: 100%;
-        height: auto;
-        text-align: left;
-    }
-
-    .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(2) p:nth-of-type(2) {
-        display: flex;
-        justify-content: flex-start;
-        gap: 16px;
-    }
+  .lieu section:nth-of-type(2) article:nth-of-type(2) figure:nth-of-type(1),
+  .lieu section:nth-of-type(2) article:nth-of-type(2) figure:nth-of-type(1) img {
+    position: static;
+    width: 100%;
+    height: 200px;
+  }
 
 
-    /*----------------------------------------- SECTION 5 (INSTANTANES) ----------------------------------------------------*/
-    .lieu section:nth-of-type(5) {
-        display: none !important;
-    }
+  /*----------------------------------------- SECTION 3 (HISTOIRE) ----------------------------------------------------*/
+  .lieu main>section:nth-of-type(3) {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 24px;
+  }
 
-    /*----------------------------------------- FOOTER ----------------------------------------------------*/
-    .lieu footer p {
-        text-align: center;
-    }
+  .lieu main>section:nth-of-type(3) article:nth-of-type(1) {
+    order: 1;
+    max-width: 100%;
+    gap: 8px;
+  }
 
-    header > nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 999;
+  .lieu section:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(2),
+  .lieu section:nth-of-type(3) article:nth-of-type(1) p:nth-of-type(3) {
+    display: none;
+  }
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 24px;
-        background: rgba(0, 0, 0, 0);
-        min-height: 50px;
-    }
+  .lieu section:nth-of-type(3) article:nth-of-type(2) {
+    order: 2;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: static;
+  }
 
-    header > nav .nav-logo {
-        color: white;
-        font-size: 1rem;
-        z-index: 1001;
-        text-decoration: none;
-    }
+  .lieu section:nth-of-type(3) article:nth-of-type(2) figure:nth-of-type(2) {
+    display: none;
+  }
 
-    .mobile-menu-toggle {
-        display: block;
-        content: "☰";
-        color: white;
-        font-size: 28px;
-        cursor: pointer;
-        z-index: 1001;
-        transition: color 0.3s ease;
-    }
+  .lieu section:nth-of-type(3) article:nth-of-type(2) figure:nth-of-type(1),
+  .lieu section:nth-of-type(3) article:nth-of-type(2) figure:nth-of-type(1) img {
+    position: static;
+    width: 100%;
+    height: 200px;
+  }
 
-    header > nav ul {
-        display: flex;
-        flex-direction: column;
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(-100vh);
-        transition: opacity 0.4s ease, transform 0.4s ease, visibility 0s 0.4s;
+  .lieu section:nth-of-type(3) article:nth-of-type(3) {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    margin-top: 30px;
+    order: 3;
+  }
 
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        z-index: 998;
+  .lieu section:nth-of-type(3) article:nth-of-type(3) figure:nth-of-type(2) {
+    display: none;
+  }
 
-        background-color: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-
-        justify-content: center;
-        align-items: center;
-        padding-top: 0;
-        gap: 30px;
-    }
+  .lieu section:nth-of-type(3) article:nth-of-type(3) figure:nth-of-type(1),
+  .lieu section:nth-of-type(3) article:nth-of-type(3) figure:nth-of-type(1) img {
+    width: 100%;
+    height: 250px;
+  }
 
 
-    header > nav.open ul {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: 0s;
-        width: 100%;
-        padding: 0;
-    }
+  /*----------------------------------------- SECTION 4 (ATTRACTION) ----------------------------------------------------*/
+  .lieu section:nth-of-type(4) section:nth-of-type(1) {
+    padding-bottom: 30px;
+  }
 
-    header > nav.open ul li a {
-        font-size: 1.5rem;
-        color: black;
-        padding: 10px 0;
-    }
+  .lieu section:nth-of-type(4) h2,
+  .lieu section:nth-of-type(4) h3,
+  .lieu section:nth-of-type(4) p {
+    text-align: center;
+    width: 100%;
+  }
 
-    header > nav.open .mobile-menu-toggle {
-        content: "✖";
-        color: black;
-    }
-    header > nav.open .nav-logo {
-        color: black;
-    }
+  .lieu section:nth-of-type(4) hr {
+    margin: 30px 0;
+  }
+
+  .lieu section:nth-of-type(4) section:nth-of-type(2),
+  .lieu section:nth-of-type(4) section:nth-of-type(3),
+  .lieu section:nth-of-type(4) section:nth-of-type(4) {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    max-height: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .lieu section:nth-of-type(4) section:nth-of-type(n+2) article {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(1) p:nth-of-type(1),
+  .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(1) p:nth-of-type(2) {
+    display: none;
+  }
+
+  .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(1) {
+    order: 1;
+    gap: 5px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(1) h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .lieu section:nth-of-type(4) section:nth-of-type(n+2) figure {
+    order: 2;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .lieu section:nth-of-type(4) section:nth-of-type(n+2) figure img {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    border-radius: 16px;
+  }
+
+  .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(2) {
+    order: 3;
+    padding-top: 0;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(2) p {
+    width: 100%;
+    height: auto;
+    text-align: left;
+  }
+
+  .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(2) p:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+
+  /*----------------------------------------- SECTION 5 (INSTANTANES) ----------------------------------------------------*/
+  .lieu section:nth-of-type(5) {
+    display: none !important;
+  }
+
+  /*----------------------------------------- FOOTER ----------------------------------------------------*/
+  .lieu footer p {
+    text-align: center;
+  }
+
+  header>nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 24px;
+    background: rgba(0, 0, 0, 0);
+    min-height: 50px;
+  }
+
+  header>nav .nav-logo {
+    color: white;
+    font-size: 1rem;
+    z-index: 1001;
+    text-decoration: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    content: "☰";
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: color 0.3s ease;
+  }
+
+  header>nav ul {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100vh);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0s 0.4s;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 998;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    gap: 30px;
+  }
+
+
+  header>nav.open ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+    width: 100%;
+    padding: 0;
+  }
+
+  header>nav.open ul li a {
+    font-size: 1.5rem;
+    color: black;
+    padding: 10px 0;
+  }
+
+  header>nav.open .mobile-menu-toggle {
+    content: "✖";
+    color: black;
+  }
+
+  header>nav.open .nav-logo {
+    color: black;
+  }
 }
-
