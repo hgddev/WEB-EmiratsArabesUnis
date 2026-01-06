@@ -888,11 +888,12 @@ footer p:nth-of-type(3) {
 .oeuvre main>section:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1) p,
 .oeuvre main>section:nth-of-type(1) article:nth-of-type(2) section:nth-of-type(1) p {
   margin-top: 0;
-  font-size: 19px;
+  font-size: 17px;
   width: 280px;
   max-width: 280px;
   background-color: #ffffff;
   height: 230px;
+  margin: 3px;
 }
 
 
