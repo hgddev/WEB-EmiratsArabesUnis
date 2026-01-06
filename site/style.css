@@ -668,7 +668,7 @@ footer p:nth-of-type(3){
 }
 
 .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-of-type(3)){
-  border: 8px solid black;
+  /*border: 8px solid black;*/
   position: relative;
   bottom: 37em;
 }
