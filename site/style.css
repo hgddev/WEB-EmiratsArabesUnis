@@ -3631,4 +3631,101 @@ nav ul.menu {
   header>nav.open .nav-logo {
     color: black;
   }
+
+  /*-------------------------------------- general page personnage --------------------------------------*/
+
+  .personnage main,
+  .personnage header,
+  .personnage footer,
+  .personnage section {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
+
+  .personnage section:nth-of-type(n) article {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .personnage h2 {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .personnage h3 {
+    font-size: 14px;
+  }
+
+  .personnage p {
+    font-size: 14px;
+  }
+
+  /*-------------------------------------- header --------------------------------------*/
+
+  .personnage header {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .personnage header h1 {
+    font-size: 48px;
+    line-height: 52px;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .personnage header::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.75) 99%);
+  }
+
+  .personnage header nav {
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0));
+  }
+
+  /*-------------------------------------- body --------------------------------------*/
+
+  .personnage section article {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .personnage section article figure img {
+    width: 100%;
+    max-width: 400px;
+    
+  }
+
+  .personnage section article section{
+    margin: 0;
+    padding: 0;
+  }
+
+  .personnage section article:nth-child(3) section {
+    order: 0;
+  }
+
+  .personnage h2 {
+    align-self: baseline;
+  }
+
+  .personnage h3 {
+    align-self: baseline;
+  }
+
 }
