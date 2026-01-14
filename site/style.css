@@ -1542,17 +1542,17 @@ footer p:nth-of-type(3) {
   line-height: 25px;
 }
 
-.personnage section article:nth-child(1) img {
+.personnage section article:nth-child(1) figure img {
   width: 369px;
   height: 520px;
 }
 
-.personnage section article:nth-child(3) img {
+.personnage section article:nth-child(3) figure img {
   width: 526px;
   height: 350px;
 }
 
-.personnage section article:last-child img {
+.personnage section article:last-child figure img {
   width: 352px;
   height: 193px;
 }
@@ -1569,6 +1569,13 @@ footer p:nth-of-type(3) {
 
 .personnage section article ul li {
   color: rgba(0, 0, 0, 0.60);
+}
+
+.arrow-toggle,
+.arrow,
+span,
+input {
+  display: none;
 }
 
 
@@ -3701,14 +3708,13 @@ nav ul.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   
   .personnage section article figure img {
     width: 100%;
     max-width: 400px;
-    
   }
 
   .personnage section article section{
@@ -3728,4 +3734,35 @@ nav ul.menu {
     align-self: baseline;
   }
 
+  .arrow-toggle,
+  .arrow,
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  .arrow {
+    width: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  
+  input[type="checkbox"]:checked ~ label .arrow {
+    transform: rotate(90deg);
+  }
+
+  input[type="checkbox"]:checked ~ .content {
+    max-height: 800px;
+  }
+  
 }
