@@ -193,7 +193,7 @@ footer p:nth-of-type(3) {
 
 
 
-/*Partie Acceuil*/
+/*------------------------      Partie Acceuil      --------------------------*/
 
 /* Settings de la totalité de la page*/
 .index {
@@ -362,6 +362,7 @@ footer p:nth-of-type(3) {
 }
 
 /*Agencement dela deuxième grande section de la page*/
+/**/
 
 .index section:nth-of-type(2):not(section:nth-of-type(2) section) {
   display: flex;
@@ -1542,17 +1543,17 @@ footer p:nth-of-type(3) {
   line-height: 25px;
 }
 
-.personnage section article:nth-child(1) img {
+.personnage section article:nth-child(1) figure img {
   width: 369px;
   height: 520px;
 }
 
-.personnage section article:nth-child(3) img {
+.personnage section article:nth-child(3) figure img {
   width: 526px;
   height: 350px;
 }
 
-.personnage section article:last-child img {
+.personnage section article:last-child figure img {
   width: 352px;
   height: 193px;
 }
@@ -1569,6 +1570,13 @@ footer p:nth-of-type(3) {
 
 .personnage section article ul li {
   color: rgba(0, 0, 0, 0.60);
+}
+
+.arrow-toggle,
+.arrow,
+span,
+input {
+  display: none;
 }
 
 
@@ -2745,6 +2753,227 @@ nav ul.menu {
 
 /* ---------------------------------------------------Mobile standard--------------------------------------------------- */
 @media (min-width: 412px) and (max-width: 768px) {
+  
+  /*  ----------    PAGE D'ACCEUIL    ----------  */
+  
+  .index header{
+    height: 80%;
+  }
+
+  .index {
+    padding: 0%;
+    margin: 0%;    
+  }
+
+  .index header h1{
+    text-align: center;
+    display: block;
+    left: 0;
+    bottom: 15%;
+  }
+  
+  .index .pres{
+    width: 100%;
+    font-size: 30px;
+    font-variant: small-caps;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .index main section:first-child{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    flex-shrink: 1;
+  }
+
+/* j'enlève les images inutiles */
+
+  .index main section:nth-of-type(1) figure img{
+    display: none;
+  }
+  
+  .index main section:nth-of-type(1) figure{
+    display: none;
+  }
+
+  /**/
+
+  .index main section:nth-of-type(1) article article{
+    font-size: 20px;
+    height: auto;
+  }
+
+  .index main section:nth-of-type(1) article article p{
+    width: auto;
+  }
+
+  /*  -----   Agencement 2e grande partie   ----- */
+  .index section:nth-of-type(2):not(section:nth-of-type(2) section:nth-of-type(2)) {
+    margin-top: 1em;
+    padding-top: 3em;
+    margin-bottom: 5em;
+    
+    position: static;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  /*border: 8px solid black;*/
+  }
+  
+  .index section:nth-of-type(2):not(section:nth-of-type(2) section:nth-of-type(2))
+  figure {
+    animation: none;
+    transition: none;
+  }
+
+  .index section:nth-of-type(2) section:nth-of-type(2) figure,
+  .index section:nth-of-type(2) section:nth-of-type(1) figure,
+  .index section:nth-of-type(2) section:nth-of-type(3) figure{
+    display: none;
+  }
+
+  .index main section:nth-of-type(2) section:nth-of-type(1) article{
+    /*border: 8px solid black;*/
+    font-size: small;
+    width: 100%;
+    height: 85%;
+    border-radius: 0%;
+    align-self: center;
+    text-align: left;
+  }
+
+  .index section:nth-of-type(2) section:nth-of-type(1) article p{
+    font-size: 25px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+
+  .index section:nth-of-type(2) section:nth-of-type(1) article h2{
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .index section:nth-of-type(2) section:nth-of-type(1) article ul{
+    font-size: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .index main section:nth-of-type(2) section:nth-of-type(2) article{
+    /*border: 8px solid black;*/
+    border-radius: 0%;
+    height: 70%;
+    width: 95%;
+    margin-bottom: 3em;
+    align-self: left;
+    
+  }
+
+  .index main section:nth-of-type(2) section:nth-of-type(3) article{
+    /*border: 8px solid black;*/
+    
+    box-sizing: border-box;
+    border-radius: 0%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 8%;
+    font-size: 25px;
+  }
+
+  .index section:nth-of-type(2) section:nth-of-type(3) article p{
+    font-size: 25px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+
+  .index section:nth-of-type(2) section:nth-of-type(3) article h2{
+    text-align: center;
+    font-size: 35px;
+  }
+
+  /*    -----   Agencement Partie 3   -----   */
+
+  .index main section:nth-of-type(3) > h2{
+    /*border: 8px solid black;*/
+    font-size: 30px;
+    position: relative;
+    top: 3em;
+  } 
+
+  .index main section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(1){
+    /*border: 8px solid black;*/
+    align-content: center;
+    width: 58%;
+    position: static;
+  }
+
+  .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) figure:nth-of-type(1){
+    position: static;
+  }
+
+  .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(2){
+    /*border: 8px solid black;*/
+    align-content: center;
+    width: 58%;
+    position: static;
+  }
+
+  .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) figure:nth-of-type(2){
+    position: static;
+  }
+
+  .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:last-of-type{
+    /*border: 8px solid black;*/
+    align-content: center;
+    width: 58%;
+    align-self: center;
+    position: static;
+  }
+
+
+/*      Agencement du bas de l'écran      */
+
+  .index main aside h2{
+    font-size: 35px;
+  }
+
+  .index main aside article{
+    display: flex;
+    flex-direction: column;
+    gap: calc(0px);
+    justify-content: space-between;
+    align-content: center;
+    }
+
+    .index main aside article figure:nth-of-type(1){
+      align-self: center;
+      left: 0em;
+      height: 50%;
+    }
+    .index main aside article figure:nth-of-type(2){
+      align-self: center;
+      left: 0em;
+    }
+    .index main aside article figure:nth-of-type(3){
+      align-self: center;
+      left: 0em;
+    }
+
+  /*--------------------------------------------------------------------------------------------------------------*/
+  
   .oeuvre .menu-lateral {
     display: none;
   }
@@ -3508,20 +3737,20 @@ nav ul.menu {
   }
 
   .lieu section:nth-of-type(4) section:nth-of-type(n+2) figure {
+      width: 100%;
     order: 2;
     position: static;
     margin: 0 auto;
   }
-
   .lieu section:nth-of-type(4) section:nth-of-type(n+2) figure img {
     width: 100%;
-    max-width: 400px;
     height: 200px;
     border-radius: 16px;
   }
 
   .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(2) {
     order: 3;
+    width: 100%;
     padding-top: 0;
     align-items: flex-start;
     gap: 16px;
@@ -3535,7 +3764,7 @@ nav ul.menu {
 
   .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(2) p:nth-of-type(2) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 16px;
   }
 
@@ -3631,4 +3860,131 @@ nav ul.menu {
   header>nav.open .nav-logo {
     color: black;
   }
+
+  /*-------------------------------------- general page personnage --------------------------------------*/
+
+  .personnage main,
+  .personnage header,
+  .personnage footer,
+  .personnage section {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
+
+  .personnage section:nth-of-type(n) article {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .personnage h2 {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .personnage h3 {
+    font-size: 14px;
+  }
+
+  .personnage p {
+    font-size: 14px;
+  }
+
+  /*-------------------------------------- header --------------------------------------*/
+
+  .personnage header {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .personnage header h1 {
+    font-size: 48px;
+    line-height: 52px;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .personnage header::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.75) 99%);
+  }
+
+  .personnage header nav {
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0));
+  }
+
+  /*-------------------------------------- body --------------------------------------*/
+
+  .personnage section article {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .personnage section article figure img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .personnage section article section{
+    margin: 0;
+    padding: 0;
+  }
+
+  .personnage section article:nth-child(3) section {
+    order: 0;
+  }
+
+  .personnage h2 {
+    align-self: baseline;
+  }
+
+  .personnage h3 {
+    align-self: baseline;
+  }
+
+  .arrow-toggle,
+  .arrow,
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  .arrow {
+    width: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  
+  input[type="checkbox"]:checked ~ label .arrow {
+    transform: rotate(90deg);
+  }
+
+  input[type="checkbox"]:checked ~ .content {
+    max-height: 800px;
+  }
+  
 }
