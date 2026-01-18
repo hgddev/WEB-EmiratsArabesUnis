@@ -3515,20 +3515,20 @@ nav ul.menu {
   }
 
   .lieu section:nth-of-type(4) section:nth-of-type(n+2) figure {
+      width: 100%;
     order: 2;
     position: static;
     margin: 0 auto;
   }
-
   .lieu section:nth-of-type(4) section:nth-of-type(n+2) figure img {
     width: 100%;
-    max-width: 400px;
     height: 200px;
     border-radius: 16px;
   }
 
   .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(2) {
     order: 3;
+    width: 100%;
     padding-top: 0;
     align-items: flex-start;
     gap: 16px;
@@ -3542,7 +3542,7 @@ nav ul.menu {
 
   .lieu section:nth-of-type(4) section:nth-of-type(n+2) article:nth-of-type(2) p:nth-of-type(2) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 16px;
   }
 
