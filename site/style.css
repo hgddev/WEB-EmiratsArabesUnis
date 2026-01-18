@@ -1449,7 +1449,7 @@ footer p:nth-of-type(3) {
 }
 
 /* texte MENU vertical dans le menu */
-.oeuvre .menu-ouverture .menu-text {
+.oeuvre >.menu-ouverture >.menu-text {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   color: white;
@@ -3854,7 +3854,7 @@ nav ul.menu {
 
   header>nav.open .mobile-menu-toggle {
     content: "✖";
-    color: black;
+    color: rgb(0, 0, 0);
   }
 
   header>nav.open .nav-logo {
