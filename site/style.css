@@ -2760,9 +2760,8 @@ nav ul.menu {
     height: 80%;
   }
 
-  .index {
-    padding: 0%;
-    margin: 0%;    
+  .index p{  
+    font-size: 10rem;  
   }
 
   .index header h1{
@@ -2815,7 +2814,7 @@ nav ul.menu {
     margin-top: 1em;
     padding-top: 3em;
     margin-bottom: 5em;
-    
+    flex-shrink: 1;
     position: static;
     display: flex;
     flex-direction: column;
@@ -2953,7 +2952,6 @@ nav ul.menu {
   .index main aside article{
     display: flex;
     flex-direction: column;
-    gap: calc(0px);
     justify-content: space-between;
     align-content: center;
     }
