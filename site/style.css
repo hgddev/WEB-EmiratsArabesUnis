@@ -2759,9 +2759,8 @@ nav ul.menu {
     height: 80%;
   }
 
-  .index {
-    padding: 0%;
-    margin: 0%;    
+  .index p{  
+    font-size: 10rem;  
   }
 
   .index header h1{
@@ -2814,7 +2813,7 @@ nav ul.menu {
     margin-top: 1em;
     padding-top: 3em;
     margin-bottom: 5em;
-    
+    flex-shrink: 1;
     position: static;
     display: flex;
     flex-direction: column;
@@ -2847,8 +2846,6 @@ nav ul.menu {
 
   .index section:nth-of-type(2) section:nth-of-type(1) article p{
     font-size: 25px;
-    margin-left: 8%;
-    margin-right: 8%;
   }
 
 
@@ -2882,18 +2879,18 @@ nav ul.menu {
     padding-right: 1em;
     padding-top: 8%;
     font-size: 25px;
+    width: 90%;
+    height: auto;
   }
 
   .index section:nth-of-type(2) section:nth-of-type(3) article p{
-    font-size: 25px;
-    margin-left: 8%;
-    margin-right: 8%;
+    font-size: 20px;
   }
 
 
   .index section:nth-of-type(2) section:nth-of-type(3) article h2{
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
   }
 
   /*    -----   Agencement Partie 3   -----   */
@@ -2914,8 +2911,10 @@ nav ul.menu {
 
   .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(1){
     /*border: 8px solid black;*/
+    border-radius: 0%;
     align-content: center;
-    width: 58%;
+    width: 40%;
+    height: auto;
     position: static;
   }
 
@@ -2925,8 +2924,10 @@ nav ul.menu {
 
   .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:nth-of-type(2){
     /*border: 8px solid black;*/
+    border-radius: 0%;
     align-content: center;
-    width: 58%;
+    width: 41%;
+    height: auto;
     position: static;
   }
 
@@ -2936,23 +2937,25 @@ nav ul.menu {
 
   .index main section:nth-of-type(3):not(section:nth-of-type(2) section:nth-child(3)) article:last-of-type{
     /*border: 8px solid black;*/
+    border-radius: 0%;
     align-content: center;
-    width: 58%;
+    width: 43%;
+    height: auto;
     align-self: center;
     position: static;
+    font-size: 20px;
   }
 
 
 /*      Agencement du bas de l'écran      */
 
   .index main aside h2{
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .index main aside article{
     display: flex;
     flex-direction: column;
-    gap: calc(0px);
     justify-content: space-between;
     align-content: center;
     }
