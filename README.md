@@ -1,7 +1,7 @@
 # Site Vitrine — Émirats Arabes Unis 🇦🇪
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/CSS)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/CSS)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)](https://www.figma.com)
 [![Responsive](https://img.shields.io/badge/Responsive-Design-blueviolet)](#)
 
@@ -35,6 +35,6 @@ Le développement de ce site vitrine a permis de valider plusieurs étapes clés
 ## Technologies Utilisées
 
 * **HTML5** – Structuration sémantique du contenu
-* **CSS3 & Responsive Design** – Design, mise en page (Flexbox/Grid) et adaptabilité mobile
+* **CSS & Responsive Design** – Design, mise en page (Flexbox/Grid) et adaptabilité mobile
 * **Figma** – Prototypage et UI Design
 
