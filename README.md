@@ -9,20 +9,20 @@ Projet réalisé par Hugo Davy, Marcel Ekia Diwanga, Divi Le Gall et Fevzi Emre 
 
 ---
 
-## 🎯 Objectif du Projet
+## Objectif du Projet
 
 Concevoir et réaliser un site web vitrine complet présentant la destination touristique des **Émirats Arabes Unis**. L'enjeu principal était de marier l'aspect luxueux et moderne de cette destination avec une interface utilisateur ergonomique, soignée et agréable à parcourir, tout en respectant scrupuleusement les standards du web et une charte graphique prédéfinie.
 
 ---
 
-## 🏛️ Mon Focus : La page "Œuvre" (*The Dubai Frame*)
+## Focus Hugo Davy : La page "Œuvre" (*The Dubai Frame*)
 
 Dans le cadre de ce projet d'équipe, j'ai été pleinement responsable de la conception et du développement de la page **"Œuvre"**. 
 J'ai choisi de mettre en valeur **The Dubai Frame** (la plus grande structure en forme de cadre au monde), un monument symbolique qui fait le pont entre le Dubaï historique et le Dubaï moderne.
 
 ---
 
-## 🛠️ Compétences Apprises & Validées
+## Compétences Apprises & Validées
 
 Le développement de ce site vitrine a permis de valider plusieurs étapes clés du cycle de vie d'un projet web :
 
@@ -32,16 +32,9 @@ Le développement de ce site vitrine a permis de valider plusieurs étapes clés
 
 ---
 
-## 📂 Technologies Utilisées
+## Technologies Utilisées
 
 * **HTML5** – Structuration sémantique du contenu
 * **CSS3 & Responsive Design** – Design, mise en page (Flexbox/Grid) et adaptabilité mobile
 * **Figma** – Prototypage et UI Design
 
----
-
-## 🔗 Liens du Projet
-
-* **Code Source :** [Consulter le dépôt GitHub](https://github.com/TonPseudo/TonDepot) *(Lien interne)*
-* **Maquette Figma :** [Découvrir le Design sur Figma](https://www.figma.com) ---
-*Projet réalisé dans un cadre pédagogique — Hugo Davy — 2026*
