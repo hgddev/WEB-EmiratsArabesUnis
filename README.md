@@ -5,7 +5,7 @@
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)](https://www.figma.com)
 [![Responsive](https://img.shields.io/badge/Responsive-Design-blueviolet)](#)
 
-> **Projet Universitaire d'Intégration Web** — Réalisé par **Hugo Davy** (2026).
+Projet réalisé par Hugo Davy, Marcel Ekia Diwanga, Divi Le Gall et Fevzi Emre Gündüz.
 
 ---
 
